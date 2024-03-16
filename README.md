@@ -19,14 +19,15 @@ Create a students table and add the initial data
   
 The functions for INSERT, UPDATE, and DELETE operations are all called separately called in the `application-code` file.
 
-To test, you can uncomment each function call separately to see the individual effects it has on the database in pgAdmin. In the function call to `addStudent()` you can edit the data of the new student that you want to add within the parameters.
-The same can be done with the function call to `updateStudentEmail()`.
+To test, you can uncomment each function call separately to see the individual effects it has on the database in pgAdmin. In the function call to `addStudent()` <br> 
+`EXAMPLE`<br>`addStudent('new', 'user', 'new.usertest@hello.ca', '2024-03-14')` <br>you can edit the data of the new student that you want to add within the parameters.
+The same can be done with the function call to `updateStudentEmail()`. <br> `updateStudentEmail(3, 'newemail.update@updatedemail.com')`<br>
 
-Documentation:
-`getAllStudents()` - function that retrieves and displays all records from the students table
-`addStudent(first_name, last_name, email, enrollment_date)` - inserts a new student record into the students table
-`updateStudentEmail(student_id, new_email)` - updates the email address for a student with the specified student_id
-`deleteStudent(student_id)` - deletes the record of the student with the specified student_id
+Documentation:<br>
+`getAllStudents()` - function that retrieves and displays all records from the students table <br>
+`addStudent(first_name, last_name, email, enrollment_date)` - inserts a new student record into the students table <br>
+`updateStudentEmail(student_id, new_email)` - updates the email address for a student with the specified student_id <br>
+`deleteStudent(student_id)` - deletes the record of the student with the specified student_id <br>
 
 Video Demo:
 [https://youtu.be/49HH5T_Wka8](url)
