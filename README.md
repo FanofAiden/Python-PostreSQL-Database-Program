@@ -30,4 +30,4 @@ Documentation:<br>
 `deleteStudent(student_id)` - deletes the record of the student with the specified student_id <br>
 
 Video Demo:
-[https://youtu.be/49HH5T_Wka8](url)
+https://youtu.be/49HH5T_Wka8
