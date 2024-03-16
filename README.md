@@ -21,7 +21,7 @@ The functions for INSERT, UPDATE, and DELETE operations are all called separatel
 
 To test, you can uncomment each function call separately to see the individual effects it has on the database in pgAdmin. In the function call to `addStudent()` <br> 
 `EXAMPLE`<br>`addStudent('new', 'user', 'new.usertest@hello.ca', '2024-03-14')` <br>you can edit the data of the new student that you want to add within the parameters.
-The same can be done with the function call to `updateStudentEmail()`. <br> `updateStudentEmail(3, 'newemail.update@updatedemail.com')`<br>
+The same can be done with the function call to `updateStudentEmail()`. <br> `EXAMPLE`<br>updateStudentEmail(3, 'newemail.update@updatedemail.com')`<br>
 
 Documentation:<br>
 `getAllStudents()` - function that retrieves and displays all records from the students table <br>
