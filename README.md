@@ -13,6 +13,7 @@ Instructions:
 The program is connected to the specific database called ` studentdb`. The username and password are both ` postgres`. The host is ` localhost`  and the port is ` 5432` . 
 
 Create a students table and add the initial data
-  This is done in the 
-The functions for INSERT, UPDATE, and DELETE operations are all called seperatly
+  This is done in the ` database-create-table` sql file
+  
+The functions for INSERT, UPDATE, and DELETE operations are all called seperately called in the 
 
