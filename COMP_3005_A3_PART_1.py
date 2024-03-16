@@ -40,7 +40,7 @@ def deleteStudent(student_id):
     )
     connection.commit()
 
-try:
+try:        #uncomment each function call individually to test and see individual effects of each function
     # print("Getting all students:")
     # getAllStudents()
 
@@ -52,9 +52,9 @@ try:
     # updateStudentEmail(4, 'aiden.fan@newemail.ca')
     # getAllStudents()
 
-    print("Deleting a student:")
-    deleteStudent(4)
-    getAllStudents()
+    # print("Deleting a student:")
+    # deleteStudent(4)
+    # getAllStudents()
 
 except Exception as e:
     print("An error occurred:", e)
