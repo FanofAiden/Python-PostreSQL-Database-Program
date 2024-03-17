@@ -34,5 +34,8 @@ Documentation:<br>
 `main_menu()` - function that creates a menu for user input then calls corresponding functions until user chooses to exit<br>
 `main()` - calls the `main_menu()` function<br>
 
+**NOT SHOWN/NEEDED IN VIDEO**<br>
+when a user decides to exit, the `DROP TABLE students;` command runs and deletes the table. <br>
+
 Video Demo:
 https://youtu.be/GgFBXbvQFo4
