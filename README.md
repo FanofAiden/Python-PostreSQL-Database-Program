@@ -10,7 +10,7 @@ Setup:
   `pip install psycopg2`
 
 Instructions:
-If you choose to use your machine's cmd, run the following command to run the program:<br> `python application-code.py`<br>If you choose to run on an IDE like VSCode, just run it<br>
+If you choose to use your machine's cmd, run the following command to run the program:<br> `python application-code.py`<br>If you choose to run on an IDE like VSCode, just run it<br><br>
 The program is connected to the specific database called `studentdb`. The username and password are both `postgres`. The host is `localhost`  and the port is `5432` . 
 
 Create a students table and add the initial data
