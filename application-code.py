@@ -40,30 +40,52 @@ def deleteStudent(student_id):
     )
     connection.commit()
 
-try:        #uncomment each function call individually to test and see individual effects of each function
-    # print("Getting all students:")
-    # getAllStudents()
+def main_menu():
+    while True:
+        print("\n--- Student Management System ---")
+        print("1. Get all students")
+        print("2. Add a new student")
+        print("3. Update student email")
+        print("4. Delete a student")
+        print("0. Exit")
+        choice = input("Enter your choice (0-4): ")
 
-    # print("Adding a new student:")
-    # addStudent('Aiden', 'Fan', 'aiden.fan@carleton.ca', '2024-03-14')
-    # getAllStudents()
+        if choice == "1":
+            print("\nGetting all students:")
+            getAllStudents()
 
-    # print("Updating student email:")
-    # updateStudentEmail(4, 'aiden.fan@newemail.ca')
-    # getAllStudents()
+        elif choice == "2":
+            print("\nAdding a new student:")
+            first_name = input("Enter first name: ")
+            last_name = input("Enter last name: ")
+            email = input("Enter email: ")
+            enrollment_date = input("Enter enrollment date (YYYY-MM-DD): ")
+            addStudent(first_name, last_name, email, enrollment_date)
+            print("---Student Added Successfully---")
 
-    # print("Deleting a student:")
-    # deleteStudent(4)
-    # getAllStudents()
+        elif choice == "3":
+            print("\nUpdating student email:")
+            student_id = int(input("Enter student ID to update email for: "))
+            new_email = input("Enter new email: ")
+            updateStudentEmail(student_id, new_email)
+            print("---Student Email Updated Successfully---")
 
-except Exception as e:
-    print("An error occurred:", e)
+        elif choice == "4":
+            print("\nDeleting a student:")
+            student_id = int(input("Enter student ID to delete: "))
+            deleteStudent(student_id)
+            print("---Student Record Deleted Sucessfully---")
 
-finally:
-    if currentConnect:
-        currentConnect.close()
-    if connection:
-        connection.close()
+        elif choice == "0":
+            print("Exit Successful")
+            break
+        else:
+            print("Invalid choice, please enter a number between 0 and 4.")
+
+def main():
+    main_menu()
+
+main()
 
 currentConnect.close()
 connection.close()
