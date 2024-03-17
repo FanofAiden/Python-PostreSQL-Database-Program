@@ -19,11 +19,12 @@ Create a students table and add the initial data
     Make sure you're inside the `studentdb` database<br>
 
 Once the program is running, choose inputs to test different CRUD operations:<br>
+**ALL INPUTED DATA MUST BE WITHIN CONSTRAINTS**
 If your input is:<br>
 1. this calls the `getAllStudents()` function
-2. this asks for user input then calls the `addStudent()` function with that inputted data
-3. this asks for user input then calls the `updateStudentEmail()` function with the inputted data
-4. this asks for user input then calls the `deleteStudent()` function with the inputted data
+2. this asks for user input `(first_name, last_name, email, enrollment_date)` then calls the `addStudent()` function with that inputted data
+3. this asks for user input `(student_id, new_email)` then calls the `updateStudentEmail()` function with the inputted data
+4. this asks for user input `(student_id)` then calls the `deleteStudent()` function with the inputted data
 
 Documentation:<br>
 `getAllStudents()` - function that retrieves and displays all records from the students table <br>
