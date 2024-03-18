@@ -1,3 +1,6 @@
+--creating studentdb database
+CREATE DATABASE studentdb;
+
 --creating students table
 CREATE TABLE students (
     student_id SERIAL PRIMARY KEY,
