@@ -1,5 +1,5 @@
 --creating studentdb database
-CREATE DATABASE studentdb;
+CREATE DATABASE IF NOT EXISTS studentdb;
 
 --creating students table
 CREATE TABLE students (
