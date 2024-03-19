@@ -19,7 +19,7 @@ Create the `studentdb` database and the `students table` and add the `initial da
     Make sure you're inside the `studentdb` database<br>
 
 Once the program is running, choose inputs to test different CRUD operations:<br>
-**ALL INPUTED DATA MUST BE WITHIN CONSTRAINTS**
+**ALL INPUTED DATA MUST BE WITHIN CONSTRAINTS**<br>
 If your input is:<br>
 1. this calls the `getAllStudents()` function
 2. this asks for user input `(first_name, last_name, email, enrollment_date)` then calls the `addStudent()` function with that inputted data
